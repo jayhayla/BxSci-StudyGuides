@@ -5,87 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bronx Science Study Guides</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
-    <nav class="bg-blue-800 text-white shadow-lg">
+<body class="bg-gradient-to-br from-blue-50 to-purple-50 font-poppins">
+    <nav class="bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-xl font-bold">Bronx Science Study Guides</div>
+                <div class="text-2xl font-bold">Bronx Science Study Guides</div>
                 <div class="hidden md:flex space-x-6">
-                    <a href="#" class="hover:text-blue-200">Home</a>
-                    <a href="#ap-classes" class="hover:text-blue-200">AP Classes</a>
-                    <a href="#regular-classes" class="hover:text-blue-200">Regular Classes</a>
-                    <a href="#about" class="hover:text-blue-200">About</a>
+                    <a href="#" class="hover:text-blue-200 transition-colors">Home</a>
+                    <a href="#ap-classes" class="hover:text-blue-200 transition-colors">AP Classes</a>
+                    <a href="#regular-classes" class="hover:text-blue-200 transition-colors">Regular Classes</a>
+                    <a href="#about" class="hover:text-blue-200 transition-colors">About</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <main class="container mx-auto px-6 py-8">
-        <section class="text-center mb-12 fade-in">
-            <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Bronx Science Study Resources</h1>
-            <p class="text-gray-600">Access comprehensive study guides for all your classes</p>
+        <section class="text-center mb-16 fade-in">
+            <h1 class="text-5xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-4">Welcome to Bronx Science Study Resources</h1>
+            <p class="text-gray-600 text-xl">Access comprehensive study guides for all your classes</p>
         </section>
 
-        <section id="ap-classes" class="mb-12">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6">AP Classes</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="hover-card bg-white rounded-lg shadow-md p-6">
-                    <h3 class="text-xl font-semibold mb-2">AP Biology</h3>
-                    <p class="text-gray-600 mb-4">Comprehensive guides covering molecular biology, genetics, and more.</p>
-                    <a href="ap-biology.html" class="text-blue-600 hover:text-blue-800">Access Materials →</a>
+        <section id="ap-classes" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">AP Classes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="hover-card bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl shadow-xl p-6 transform transition-all">
+                    <div class="mb-4 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800&q=80" alt="AP Biology" class="w-full h-48 object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-purple-600">AP Biology</h3>
+                    <p class="text-gray-700 mb-4">Comprehensive guides covering molecular biology, genetics, and more.</p>
+                    <a href="ap-biology.html" class="inline-block bg-gradient-to-r from-purple-600 to-pink-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity">Access Materials →</a>
                 </div>
-                <div class="hover-card bg-white rounded-lg shadow-md p-6">
-                    <h3 class="text-xl font-semibold mb-2">AP Chemistry</h3>
-                    <p class="text-gray-600 mb-4">Study materials for chemical reactions, thermodynamics, and lab work.</p>
-                    <a href="ap-chemistry.html" class="text-blue-600 hover:text-blue-800">Access Materials →</a>
+                <div class="hover-card bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl shadow-xl p-6 transform transition-all">
+                    <div class="mb-4 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=800&q=80" alt="AP Chemistry" class="w-full h-48 object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-blue-600">AP Chemistry</h3>
+                    <p class="text-gray-700 mb-4">Study materials for chemical reactions, thermodynamics, and lab work.</p>
+                    <a href="ap-chemistry.html" class="inline-block bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity">Access Materials →</a>
                 </div>
-                <div class="hover-card bg-white rounded-lg shadow-md p-6">
-                    <h3 class="text-xl font-semibold mb-2">AP Physics</h3>
-                    <p class="text-gray-600 mb-4">Resources for mechanics, electricity, magnetism, and modern physics.</p>
-                    <a href="ap-physics.html" class="text-blue-600 hover:text-blue-800">Access Materials →</a>
+                <div class="hover-card bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl shadow-xl p-6 transform transition-all">
+                    <div class="mb-4 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&q=80" alt="AP Physics" class="w-full h-48 object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-indigo-600">AP Physics</h3>
+                    <p class="text-gray-700 mb-4">Resources for mechanics, electricity, magnetism, and modern physics.</p>
+                    <a href="ap-physics.html" class="inline-block bg-gradient-to-r from-indigo-600 to-blue-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity">Access Materials →</a>
                 </div>
             </div>
         </section>
 
-        <section id="regular-classes" class="mb-12">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6">Regular Classes</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="hover-card bg-white rounded-lg shadow-md p-6">
-                    <h3 class="text-xl font-semibold mb-2">Biology</h3>
-                    <p class="text-gray-600 mb-4">Essential concepts in biology, including cell structure and function.</p>
-                    <a href="biology.html" class="text-blue-600 hover:text-blue-800">Access Materials →</a>
+        <section id="regular-classes" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Regular Classes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="hover-card bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl shadow-xl p-6 transform transition-all">
+                    <div class="mb-4 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=800&q=80" alt="Biology" class="w-full h-48 object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-green-600">Biology</h3>
+                    <p class="text-gray-700 mb-4">Essential concepts in biology, including cell structure and function.</p>
+                    <a href="biology.html" class="inline-block bg-gradient-to-r from-green-600 to-emerald-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity">Access Materials →</a>
                 </div>
-                <div class="hover-card bg-white rounded-lg shadow-md p-6">
-                    <h3 class="text-xl font-semibold mb-2">Chemistry</h3>
-                    <p class="text-gray-600 mb-4">Fundamental chemistry concepts and lab preparation materials.</p>
-                    <a href="chemistry.html" class="text-blue-600 hover:text-blue-800">Access Materials →</a>
+                <div class="hover-card bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl shadow-xl p-6 transform transition-all">
+                    <div class="mb-4 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1532634993-15f421e42ec0?w=800&q=80" alt="Chemistry" class="w-full h-48 object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-amber-600">Chemistry</h3>
+                    <p class="text-gray-700 mb-4">Fundamental chemistry concepts and lab preparation materials.</p>
+                    <a href="chemistry.html" class="inline-block bg-gradient-to-r from-amber-600 to-yellow-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity">Access Materials →</a>
                 </div>
-                <div class="hover-card bg-white rounded-lg shadow-md p-6">
-                    <h3 class="text-xl font-semibold mb-2">Physics</h3>
-                    <p class="text-gray-600 mb-4">Core physics principles and problem-solving techniques.</p>
-                    <a href="physics.html" class="text-blue-600 hover:text-blue-800">Access Materials →</a>
+                <div class="hover-card bg-gradient-to-br from-red-50 to-orange-50 rounded-xl shadow-xl p-6 transform transition-all">
+                    <div class="mb-4 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?w=800&q=80" alt="Physics" class="w-full h-48 object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-red-600">Physics</h3>
+                    <p class="text-gray-700 mb-4">Core physics principles and problem-solving techniques.</p>
+                    <a href="physics.html" class="inline-block bg-gradient-to-r from-red-600 to-orange-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity">Access Materials →</a>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="mb-12 bg-white rounded-lg shadow-md p-8">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">About This Resource</h2>
-            <p class="text-gray-600 mb-4">
+        <section id="about" class="mb-12 bg-white rounded-xl shadow-xl p-8">
+            <h2 class="text-3xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-6">About This Resource</h2>
+            <p class="text-gray-600 text-lg mb-4">
                 This website is created by Bronx Science students for Bronx Science students. Our goal is to provide high-quality study materials that help you succeed in your classes. All content is reviewed for accuracy and updated regularly.
             </p>
-            <p class="text-gray-600">
+            <p class="text-gray-600 text-lg">
                 Want to contribute? Contact us to share your study guides and help fellow students!
             </p>
         </section>
     </main>
 
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="bg-gradient-to-r from-purple-800 to-blue-800 text-white py-8">
         <div class="container mx-auto px-6">
             <div class="text-center">
-                <p>© 2024 Bronx Science Study Guides. All rights reserved.</p>
-                <p class="mt-2">Created by students, for students.</p>
+                <p class="text-lg">© 2024 Bronx Science Study Guides. All rights reserved.</p>
+                <p class="mt-2 text-blue-200">Created by students, for students.</p>
             </div>
         </div>
     </footer>
