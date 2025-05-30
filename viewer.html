@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Guide Viewer - Bronx Science Study Guides</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-purple-50 font-poppins">
+    <nav class="bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold">Bronx Science Study Guides</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-blue-200 transition-colors">← Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-6 py-8">
+        <div class="bg-white rounded-xl shadow-xl p-6 mb-8">
+            <h1 id="documentTitle" class="text-3xl font-bold text-gray-800 mb-4">Loading...</h1>
+            <div id="documentDescription" class="text-gray-600 mb-6">Loading document details...</div>
+        </div>
+        
+        <div class="bg-white rounded-xl shadow-xl overflow-hidden" style="height: 80vh;">
+            <iframe id="pdfViewer" class="w-full h-full" frameborder="0"></iframe>
+        </div>
+    </main>
+
+    <script>
+        // Get the PDF ID from the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const fileId = urlParams.get('id');
+        const title = urlParams.get('title');
+        const description = urlParams.get('desc');
+
+        // Update the page title and description
+        document.getElementById('documentTitle').textContent = decodeURIComponent(title) || 'Study Guide';
+        document.getElementById('documentDescription').textContent = decodeURIComponent(description) || '';
+
+        // Set the PDF viewer source
+        if (fileId) {
+            const viewerUrl = `https://drive.google.com/file/d/${fileId}/preview`;
+            document.getElementById('pdfViewer').src = viewerUrl;
+        } else {
+            document.getElementById('pdfViewer').srcdoc = '<div style="padding: 20px; text-align: center;">No document specified</div>';
+        }
+    </script>
+</body>
+</html> 
